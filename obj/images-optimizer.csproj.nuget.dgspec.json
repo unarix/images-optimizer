@@ -39,10 +39,22 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "CommandLineParser": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "CoreCompat.System.Drawing": {
+              "target": "Package",
+              "version": "(, )"
+            },
             "Microsoft.NETCore.App": {
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

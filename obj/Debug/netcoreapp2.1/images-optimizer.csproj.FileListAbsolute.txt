@@ -1,0 +1,11 @@
+/home/unarix/Documentos/code/images-optimizer/bin/Debug/netcoreapp2.1/images-optimizer.deps.json
+/home/unarix/Documentos/code/images-optimizer/bin/Debug/netcoreapp2.1/images-optimizer.runtimeconfig.json
+/home/unarix/Documentos/code/images-optimizer/bin/Debug/netcoreapp2.1/images-optimizer.runtimeconfig.dev.json
+/home/unarix/Documentos/code/images-optimizer/bin/Debug/netcoreapp2.1/images-optimizer.dll
+/home/unarix/Documentos/code/images-optimizer/bin/Debug/netcoreapp2.1/images-optimizer.pdb
+/home/unarix/Documentos/code/images-optimizer/obj/Debug/netcoreapp2.1/images-optimizer.csprojAssemblyReference.cache
+/home/unarix/Documentos/code/images-optimizer/obj/Debug/netcoreapp2.1/images-optimizer.csproj.CoreCompileInputs.cache
+/home/unarix/Documentos/code/images-optimizer/obj/Debug/netcoreapp2.1/images-optimizer.AssemblyInfoInputs.cache
+/home/unarix/Documentos/code/images-optimizer/obj/Debug/netcoreapp2.1/images-optimizer.AssemblyInfo.cs
+/home/unarix/Documentos/code/images-optimizer/obj/Debug/netcoreapp2.1/images-optimizer.dll
+/home/unarix/Documentos/code/images-optimizer/obj/Debug/netcoreapp2.1/images-optimizer.pdb
