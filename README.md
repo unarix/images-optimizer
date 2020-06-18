@@ -17,11 +17,12 @@ CLI utility to resize and reduce images massively
 
 ## Arguments / Usage
 
-        ¯\_(ツ)_/¯
+                    ¯\_(ツ)_/¯
 
-- -h Help
-- -r Recursive
-- -s Size in pixels, example: -r 150 (800px by default)
-- -q Quiality in percentage, example: -q 90 (100% by default)
+-   -h Help
+-   -r Recursive (800px of width and 90% of quality by default)
+-   -w Size width in pixels (and keeps the aspect ratio), example: -w 150
+-   -q Quiality in percentage, example: -q 90
+
 
 

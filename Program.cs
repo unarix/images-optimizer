@@ -26,9 +26,9 @@ namespace images_optimizer
                 Console.WriteLine("");
                 Console.WriteLine(@"                           ¯\_(ツ)_/¯");
                 Console.WriteLine("   -h Help");
-                Console.WriteLine("   -r Recursive");
-                Console.WriteLine("   -s Size in pixels, example: -r 150 (800px by default)");
-                Console.WriteLine("   -q Quiality in percentage, example: -q 90 (90% by default)");
+                Console.WriteLine("   -r Recursive (800px of width and 90% of quality by default)");
+                Console.WriteLine("   -w Size width in pixels (and keeps the aspect ratio), example: -w 150");
+                Console.WriteLine("   -q Quiality in percentage, example: -q 90");
                 Console.WriteLine("");
             }
             else if (opts.recursive) 
@@ -60,10 +60,10 @@ namespace images_optimizer
         {
             try
             {
-                Console.Write("Creating image " + fileGen + " with quality: " + quality + " and width size:" + size);
+                Console.Write(" - Creating image " + fileGen + " with quality: " + quality + " and width size:" + size);
 
                 System.IO.Directory.CreateDirectory("rez");
-
+                Console.Write(" .");
                 using (var image = new Bitmap(System.Drawing.Image.FromFile(file)))
                 {
                     int width, height;
@@ -78,12 +78,14 @@ namespace images_optimizer
                         height = size;
                     }
                     var resized = new Bitmap(width, height);
+                    Console.Write(".");
                     using (var graphics = Graphics.FromImage(resized))
                     {
                         graphics.CompositingQuality = CompositingQuality.HighSpeed;
                         graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
                         graphics.CompositingMode = CompositingMode.SourceCopy;
                         graphics.DrawImage(image, 0, 0, width, height);
+                        Console.Write(".");
                         using (var output = File.Open(fileGen, FileMode.CreateNew))
                         {
                             var qualityParamId = Encoder.Quality;
@@ -91,6 +93,7 @@ namespace images_optimizer
                             encoderParameters.Param[0] = new EncoderParameter(qualityParamId, quality);
                             var codec = ImageCodecInfo.GetImageDecoders().FirstOrDefault(codecx => codecx.FormatID == ImageFormat.Jpeg.Guid);
                             resized.Save(fileGen, codec, encoderParameters);
+                            Console.Write(".");
                         }
                     }
                     Console.Write(" -> Ok \n");
