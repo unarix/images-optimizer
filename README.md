@@ -3,6 +3,8 @@
 ## Description
 CLI utility to resize and reduce images massively
 
+![alt text](https://raw.githubusercontent.com/unarix/images-optimizer/master/screenshot.png?raw=true)
+
 ## How to Compile
     dotnet publish -c release -r ubuntu.16.04-x64 --self-contained
 
