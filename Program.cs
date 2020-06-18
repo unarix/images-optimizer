@@ -22,25 +22,32 @@ namespace images_optimizer
             
         static void withoption(Options opts)
         {
-            if (opts.help) 
-                Console.WriteLine(opts.ToString() + "" + opts);
+            if (opts.help){
+                Console.WriteLine("");
+                Console.WriteLine(@"                           ¯\_(ツ)_/¯");
+                Console.WriteLine("   -h Help");
+                Console.WriteLine("   -r Recursive");
+                Console.WriteLine("   -s Size in pixels, example: -r 150 (800px by default)");
+                Console.WriteLine("   -q Quiality in percentage, example: -q 90 (100% by default)");
+                Console.WriteLine("");
+            }
             else if (opts.recursive) 
             {
-                const int size = 150;
-                const int quality = 75;
+                const int size = 800;
+                const int quality = 100;
 
-                // Obtengo todos los archivos que coincidan con: 
+                Console.WriteLine("Searching formats in this path: jpg, jpeg, png, gif, tiff, bmp, svg");
+                
                 var filters = new String[] { "jpg", "jpeg", "png", "gif", "tiff", "bmp", "svg" };
                 string [] fileEntries = Directory.GetFiles(".", String.Format("*.{0}", filters));
                 
                 foreach(string fileName in fileEntries)
-                    convertImg(fileName,size,quality);
+                    convertImg(fileName,fileName.Replace("./","./rez/"),size,quality);
 
-                // Recurse into subdirectories of this directory.
-                /*string [] subdirectoryEntries = Directory.GetDirectories(".");
-                foreach(string subdirectory in subdirectoryEntries)
-                    ProcessDirectory(subdirectory);*/
-
+            }
+            else
+            {
+                Console.WriteLine(" Type -h for usage arguments");
             }
         }
 
@@ -49,10 +56,14 @@ namespace images_optimizer
             Console.WriteLine("No option, type -h for help.");
         }
 
-        static bool convertImg(string file, int size, int quality)
+        static bool convertImg(string file, string fileGen, int size, int quality)
         {
             try
             {
+                Console.Write("Creating image " + fileGen + " with quality: " + quality + " and width size:" + size);
+
+                System.IO.Directory.CreateDirectory("rez");
+
                 using (var image = new Bitmap(System.Drawing.Image.FromFile(file)))
                 {
                     int width, height;
@@ -73,22 +84,23 @@ namespace images_optimizer
                         graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
                         graphics.CompositingMode = CompositingMode.SourceCopy;
                         graphics.DrawImage(image, 0, 0, width, height);
-                        using (var output = File.Open(file.Replace(".","_rez."), FileMode.Create))
+                        using (var output = File.Open(fileGen, FileMode.CreateNew))
                         {
                             var qualityParamId = Encoder.Quality;
                             var encoderParameters = new EncoderParameters(1);
                             encoderParameters.Param[0] = new EncoderParameter(qualityParamId, quality);
                             var codec = ImageCodecInfo.GetImageDecoders().FirstOrDefault(codecx => codecx.FormatID == ImageFormat.Jpeg.Guid);
-                            resized.Save(output, codec, encoderParameters);
+                            resized.Save(fileGen, codec, encoderParameters);
                         }
                     }
+                    Console.Write(" -> Ok \n");
                 }
 
                 return true;
             }
             catch(Exception ex)
             {
-                Console.Write(ex.Message);
+                Console.WriteLine(" \n -> " + ex.Message );
                 return false;
             }
         }

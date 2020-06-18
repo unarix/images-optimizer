@@ -1,0 +1,14 @@
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/libhostpolicy.so
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/libhostfxr.so
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.deps.json
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.runtimeconfig.json
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.runtimeconfig.dev.json
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.dll
+/home/unarix/Documentos/code/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.pdb
+/home/unarix/Documentos/code/images-optimizer/obj/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.csprojAssemblyReference.cache
+/home/unarix/Documentos/code/images-optimizer/obj/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.csproj.CoreCompileInputs.cache
+/home/unarix/Documentos/code/images-optimizer/obj/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.AssemblyInfoInputs.cache
+/home/unarix/Documentos/code/images-optimizer/obj/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.AssemblyInfo.cs
+/home/unarix/Documentos/code/images-optimizer/obj/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.dll
+/home/unarix/Documentos/code/images-optimizer/obj/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer.pdb
