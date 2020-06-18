@@ -28,13 +28,13 @@ namespace images_optimizer
                 Console.WriteLine("   -h Help");
                 Console.WriteLine("   -r Recursive");
                 Console.WriteLine("   -s Size in pixels, example: -r 150 (800px by default)");
-                Console.WriteLine("   -q Quiality in percentage, example: -q 90 (100% by default)");
+                Console.WriteLine("   -q Quiality in percentage, example: -q 90 (90% by default)");
                 Console.WriteLine("");
             }
             else if (opts.recursive) 
             {
-                const int size = 800;
-                const int quality = 100;
+                int size = (opts.width>0)? opts.width : 800;
+                int quality = (opts.quiality>0)? opts.quiality : 90;
 
                 Console.WriteLine("Searching formats in this path: jpg, jpeg, png, gif, tiff, bmp, svg");
                 
@@ -114,5 +114,11 @@ namespace images_optimizer
 
         [Option('r', "recursive", Required = false, HelpText = "Make optimization recursive")]
         public bool recursive { get; set; }
+
+        [Option('q', "quiality", Required = false, HelpText = "Quality")]
+        public int quiality { get; set; }
+        
+        [Option('w', "width", Required = false, HelpText = "Width")]
+        public int width { get; set; }
     }
 }
