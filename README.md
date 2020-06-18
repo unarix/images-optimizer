@@ -17,9 +17,9 @@ sudo ln -s '/home/your_user/your_path_sourcecode/images-optimizer/bin/release/ne
 
         ¯\_(ツ)_/¯
 
-- **-h Help**
-- **-r Recursive**
-- **-s Size in pixels, example: -r 150 (800px by default)**
-- **-q Quiality in percentage, example: -q 90 (100% by default)**
+- -h Help
+- -r Recursive
+- -s Size in pixels, example: -r 150 (800px by default)
+- -q Quiality in percentage, example: -q 90 (100% by default)
 
 
