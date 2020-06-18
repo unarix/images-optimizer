@@ -4,7 +4,7 @@
 
 The reason why you should resize images if you plan to load images to the internet for display on a web page or for inserting into a presentation is that image file size matters.
 
-On the web, the larger the image size the longer it will take the web page to load. For users who have slower connections, this matters a lot. Image size also matters a lot when you insert images into presentations such as PowerPoint, because if you keep the image at its original size, and insert 10-20 images into your presentation, your final PowerPoint size would be huge!
+On the web, the larger the image size the longer it will take the web page to load. For users who have slower connections (f.e in mobiles), this matters a lot. Image size also matters a lot when you insert images into presentations such as PowerPoint, because if you keep the image at its original size, and insert 10-20 images into your presentation, your final PowerPoint size would be huge!
 
 This simple CLI application allows you to modify all the images you have in a certain directory, resulting in a **new** directory with the **optimized images**.
 
