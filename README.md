@@ -13,7 +13,7 @@ CLI utility to resize and reduce images massively
 ## How to make excecutable globally
     sudo ln -s '/home/your_user/your_path_sourcecode/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer' /usr/bin/images-optimizer
 
-## Arguments / usage
+## Arguments / Usage
 
         ¯\_(ツ)_/¯
 
