@@ -13,7 +13,9 @@ chmod 777 images-optimizer
 ## Make excecutable globaly
 sudo ln -s '/home/your_user/your_path_sourcecode/images-optimizer/bin/release/netcoreapp2.1/ubuntu.16.04-x64/images-optimizer' /usr/bin/images-optimizer
 
-## Arguments ¯\_(ツ)_/¯
+## Arguments 
+
+        ¯\_(ツ)_/¯
 
 -h Help
 -r Recursive
