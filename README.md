@@ -6,6 +6,8 @@ The reason why you should resize images if you plan to load images to the intern
 
 On the web, the larger the image size the longer it will take the web page to load. For users who have slower connections, this matters a lot. Image size also matters a lot when you insert images into presentations such as PowerPoint, because if you keep the image at its original size, and insert 10-20 images into your presentation, your final PowerPoint size would be huge!
 
+This simple CLI application allows you to modify all the images you have in a certain directory, resulting in a **new** directory with the **optimized images**.
+
 ![alt text](https://raw.githubusercontent.com/unarix/images-optimizer/master/screenshot.png?raw=true)
 
 ## How to Compile
