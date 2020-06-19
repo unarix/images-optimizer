@@ -8,7 +8,7 @@ On the web, the larger the image size the longer it will take the web page to lo
 
 This simple CLI application allows you to modify all the images you have in a certain directory, resulting in a **new** directory with the **optimized images**.
 
-![alt text](https://raw.githubusercontent.com/unarix/images-optimizer/master/screenshot.png?raw=true)
+![alt text](https://raw.githubusercontent.com/unarix/images-optimizer/master/_screenshot.png?raw=true)
 
 ## How to Compile
 
