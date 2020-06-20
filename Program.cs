@@ -36,7 +36,7 @@ namespace images_optimizer
                 int size = (opts.width>0)? opts.width : 800;
                 int quality = (opts.quiality>0)? opts.quiality : 90;
 
-                Console.WriteLine("Searching formats in this path: jpg, jpeg, png, gif, tiff, bmp, svg");
+                Console.WriteLine("\U0001F964 · Searching formats in this path: jpg, jpeg, png, gif, tiff, bmp, svg");
                 
                 var filters = new String[] { "jpg", "jpeg", "png", "gif", "tiff", "bmp", "svg" };
                 string [] fileEntries = Directory.GetFiles(".", String.Format("*.{0}", filters));
@@ -60,7 +60,7 @@ namespace images_optimizer
         {
             try
             {
-                Console.Write(" - Creating image " + fileGen + " with quality: " + quality + " and width size:" + size);
+                Console.Write(" - \U0001F477 Creating image " + fileGen + " with quality: " + quality + " and width size:" + size);
 
                 System.IO.Directory.CreateDirectory("rez");
                 Console.Write(" .");
@@ -96,14 +96,14 @@ namespace images_optimizer
                             Console.Write(".");
                         }
                     }
-                    Console.Write(" -> Ok \n");
+                    Console.Write(" \U00002714 -> Created OK \n");
                 }
 
                 return true;
             }
             catch(Exception ex)
             {
-                Console.WriteLine(" \n -> " + ex.Message );
+                Console.WriteLine(" \U0000274C \n -> " + ex.Message );
                 return false;
             }
         }

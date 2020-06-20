@@ -46,6 +46,10 @@ Try to optimize all image files in current working directory, with quality at 90
 
         images-optimizer -r -q 90 -w 600
 
+## News:
+
+### add emoji support:
+![alt text](https://raw.githubusercontent.com/unarix/images-optimizer/master/_screenshot2.png?raw=true)
 
 ## You have a suggestion?
 
