@@ -25,12 +25,12 @@ This simple CLI application allows you to modify all the images you have in a ce
 
 ## Arguments
 
-                    ¯\_(ツ)_/¯
+                                ¯\_(ツ)_/¯
 
--   -h Help
--   -r Recursive (800px of width and 90% of quality by default)
--   -w Size width in pixels (and keeps the aspect ratio), example: -w 150
--   -q Quiality in percentage, example: -q 90
+        -   -h Help
+        -   -r Recursive (800px of width and 90% of quality by default)
+        -   -w Size width in pixels (and keeps the aspect ratio), example: -w 150
+        -   -q Quiality in percentage, example: -q 90
 
 ## Basic usage
 
